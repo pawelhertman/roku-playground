@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="DestroyableComponent" extends="Group">
+  <interface>
+    <field id="index" type="integer" value="-1" />
+    <field id="output" type="assocarray" alwaysNotify="true" />
+    <function name="destroy" />
+  </interface>
+
+  <children>
+    <Rectangle id="destroyableBackground" width="500" height="300" color="0xFFFFFF" />
+    <Label id="destroyableLabel" text="Destroyable component" width="500" height="300" horizAlign="center" vertAlign="center" />
+  </children>
+
+  <script type="text/brightscript" uri="DestroyableComponent.brs" />
+</component>

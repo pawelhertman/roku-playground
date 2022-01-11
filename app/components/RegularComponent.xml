@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="RegularComponent" extends="Group">
+  <children>
+    <Rectangle id="regularBackground" width="500" height="300" color="0xFFFF00" />
+    <Label id="regularLabel" text="Regular component" width="500" height="300" horizAlign="center" vertAlign="center" />
+    <TestComponent id="regularTest" />
+  </children>
+
+  <script type="text/brightscript" uri="RegularComponent.brs" />
+</component>

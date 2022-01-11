@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="AppView" extends="Group" initialFocus="buttons">
+  <children>
+    <ButtonGroup id="buttons">
+      <Button id="button1" text="Create child component to remove" />
+      <Button id="button2" text="Remove child component" />
+      <Button id="button3" text="Create child component to destroy" />
+      <Button id="button4" text="Destroy child component" />
+      <Button id="button5" text="Combo remove" />
+      <Button id="button6" text="Combo destroy" />
+    </ButtonGroup>
+  </children>
+
+  <script type="text/brightscript" uri="AppView.brs" />
+</component>

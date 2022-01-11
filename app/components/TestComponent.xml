@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="TestComponent" extends="Group">
+  <interface>
+    <field id="output" type="integer" alwaysNotify="true" />
+  </interface>
+
+  <children>
+    <Timer id="testTimer" repeat="true" duration="1" />
+  </children>
+
+  <script type="text/brightscript" uri="TestComponent.brs" />
+</component>
