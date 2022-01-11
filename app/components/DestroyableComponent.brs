@@ -18,18 +18,12 @@ sub _onIndexUpdate(evt as Object)
     m.child.index = index + 1
     m.child.translation = [5, 5]
     m.child.observeFieldScoped("output", "_onOutput") ' unnecessary - just to create more observers
-
-    m.background.color = rgba(255, 255, index, 255)
   end if
 end sub
 
 sub _onOutput(evt as Object)
   m.output = evt.getData()
 end sub
-
-function rgba(r as Integer, g as Integer, b as Integer, a = 255 as Integer)
-  return (r<<24) + (g<<16) + (b<<8) + a
-end function
 
 sub destroy()
   m.INDEX_LIMIT = Invalid
