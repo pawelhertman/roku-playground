@@ -27,7 +27,7 @@ end sub
 
 sub _removeChild()
   m.top.removeChild(m.removableComponent)
-  m.removableComponent = Invalid ' theoretically unnecessary; just in case
+  m.removableComponent = Invalid
 end sub
 
 sub _createChildToDestroy()
@@ -41,7 +41,7 @@ end sub
 sub _destroyChild()
   m.destroyableComponent.callFunc("destroy")
   m.top.removeChild(m.destroyableComponent)
-  m.destroyableComponent = Invalid ' theoretically unnecessary; just in case
+  m.destroyableComponent = Invalid
 end sub
 
 sub _comboRemove()
@@ -64,5 +64,5 @@ end sub
 
 sub _removeTimerComponent()
   m.top.removeChild(m.timerComponent)
-  m.timerComponent = Invalid ' theoretically unnecessary; just in case
+  m.timerComponent = Invalid
 end sub
