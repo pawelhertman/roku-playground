@@ -9,6 +9,8 @@
       <Button id="button4" text="Destroy child component" />
       <Button id="button5" text="Combo remove" />
       <Button id="button6" text="Combo destroy" />
+      <Button id="button7" text="Create timer component" />
+      <Button id="button8" text="Remove timer component" />
     </ButtonGroup>
   </children>
 

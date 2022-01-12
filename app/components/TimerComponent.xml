@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="TimerComponent" extends="Group">
+  <children>
+    <Timer id="timer" repeat="true" />
+  </children>
+
+  <script type="text/brightscript" uri="TimerComponent.brs" />
+</component>

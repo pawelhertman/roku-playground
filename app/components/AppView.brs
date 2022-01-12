@@ -1,6 +1,7 @@
 sub init()
   m.removableComponent = Invalid
   m.destroyableComponent = Invalid
+  m.timerComponent = Invalid
 
   _handleButtonSelection("button1", "_createChildToRemove")
   _handleButtonSelection("button2", "_removeChild")
@@ -8,6 +9,8 @@ sub init()
   _handleButtonSelection("button4", "_destroyChild")
   _handleButtonSelection("button5", "_comboRemove")
   _handleButtonSelection("button6", "_comboDestroy")
+  _handleButtonSelection("button7", "_createTimerComponent")
+  _handleButtonSelection("button8", "_removeTimerComponent")
 end sub
 
 sub _handleButtonSelection(buttonId as String, callbackName as String)
@@ -53,4 +56,13 @@ sub _comboDestroy()
     _createChildToDestroy()
     _destroyChild()
   end for
+end sub
+
+sub _createTimerComponent()
+  m.timerComponent = m.top.createChild("TimerComponent")
+end sub
+
+sub _removeTimerComponent()
+  m.top.removeChild(m.timerComponent)
+  m.timerComponent = Invalid ' theoretically unnecessary; just in case
 end sub
